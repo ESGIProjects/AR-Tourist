@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G1v-vY-3hN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arskView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kja-Mz-7Lw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arskView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSQ-w8-ygW">
+                                <rect key="frame" x="321" y="35" width="39" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset" destination="BV1-FR-VrT" eventType="touchUpInside" id="xLH-6z-03l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bI5-Am-h35" firstAttribute="trailing" secondItem="Kja-Mz-7Lw" secondAttribute="trailing" id="7pD-51-Kye"/>
+                            <constraint firstItem="Kja-Mz-7Lw" firstAttribute="top" secondItem="bI5-Am-h35" secondAttribute="top" id="Cbr-km-L0Z"/>
+                            <constraint firstItem="bI5-Am-h35" firstAttribute="trailing" secondItem="uSQ-w8-ygW" secondAttribute="trailing" constant="15" id="Hn4-5c-poC"/>
+                            <constraint firstItem="Kja-Mz-7Lw" firstAttribute="leading" secondItem="bI5-Am-h35" secondAttribute="leading" id="ccN-So-Ig8"/>
+                            <constraint firstItem="bI5-Am-h35" firstAttribute="bottom" secondItem="Kja-Mz-7Lw" secondAttribute="bottom" id="iCd-GI-awb"/>
+                            <constraint firstItem="uSQ-w8-ygW" firstAttribute="top" secondItem="bI5-Am-h35" secondAttribute="top" constant="15" id="qzc-Lk-iK4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bI5-Am-h35"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="Kja-Mz-7Lw" id="nyn-qI-nvy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

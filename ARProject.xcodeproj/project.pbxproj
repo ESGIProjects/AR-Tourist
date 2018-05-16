@@ -7,154 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59EDA8BF26D673EFAB4979D6 /* Pods_ARProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D502300984E1C068CF7C59 /* Pods_ARProject.framework */; };
-		D735686020AA273A00A4CA19 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D735685F20AA273A00A4CA19 /* Place.swift */; };
-		D7CDC96620A98A6A00C017CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CDC96520A98A6A00C017CD /* AppDelegate.swift */; };
-		D7CDC96820A98A6A00C017CD /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D7CDC96720A98A6A00C017CD /* Scene.sks */; };
-		D7CDC96A20A98A6A00C017CD /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CDC96920A98A6A00C017CD /* Scene.swift */; };
-		D7CDC96C20A98A6A00C017CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CDC96B20A98A6A00C017CD /* ViewController.swift */; };
-		D7CDC97120A98A6A00C017CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CDC97020A98A6A00C017CD /* Assets.xcassets */; };
-		D7CDC97420A98A6A00C017CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7CDC97220A98A6A00C017CD /* LaunchScreen.storyboard */; };
-		D7CDC97C20A9992600C017CD /* ViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CDC97B20A9992600C017CD /* ViewController+Delegates.swift */; };
-		D7CDC98320A999BC00C017CD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CDC98220A999BC00C017CD /* Helpers.swift */; };
-		D7CDC98820AA10BB00C017CD /* View+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CDC98720AA10BB00C017CD /* View+UI.swift */; };
+		D711C5D920AC5B99005F3488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D711C5D820AC5B99005F3488 /* AppDelegate.swift */; };
+		D711C5DB20AC5B99005F3488 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D711C5DA20AC5B99005F3488 /* Scene.sks */; };
+		D711C5DD20AC5B99005F3488 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D711C5DC20AC5B99005F3488 /* Scene.swift */; };
+		D711C5DF20AC5B99005F3488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D711C5DE20AC5B99005F3488 /* ViewController.swift */; };
+		D711C5E220AC5B99005F3488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D711C5E020AC5B99005F3488 /* Main.storyboard */; };
+		D711C5E420AC5B9A005F3488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D711C5E320AC5B9A005F3488 /* Assets.xcassets */; };
+		D711C5E720AC5B9A005F3488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D711C5E520AC5B9A005F3488 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		48D502300984E1C068CF7C59 /* Pods_ARProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80963ED94C05AB719E2DF3D8 /* Pods-ARProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARProject/Pods-ARProject.debug.xcconfig"; sourceTree = "<group>"; };
-		827212348A59C9F36C3E1810 /* Pods-ARProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARProject/Pods-ARProject.release.xcconfig"; sourceTree = "<group>"; };
-		D735685F20AA273A00A4CA19 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		D7CDC96220A98A6A00C017CD /* ARProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7CDC96520A98A6A00C017CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7CDC96720A98A6A00C017CD /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
-		D7CDC96920A98A6A00C017CD /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
-		D7CDC96B20A98A6A00C017CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7CDC97020A98A6A00C017CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D7CDC97320A98A6A00C017CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D7CDC97520A98A6B00C017CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7CDC97B20A9992600C017CD /* ViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Delegates.swift"; sourceTree = "<group>"; };
-		D7CDC98220A999BC00C017CD /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		D7CDC98720AA10BB00C017CD /* View+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+UI.swift"; sourceTree = "<group>"; };
+		D711C5D520AC5B99005F3488 /* ARProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D711C5D820AC5B99005F3488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D711C5DA20AC5B99005F3488 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
+		D711C5DC20AC5B99005F3488 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		D711C5DE20AC5B99005F3488 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D711C5E120AC5B99005F3488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D711C5E320AC5B9A005F3488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D711C5E620AC5B9A005F3488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D711C5E820AC5B9A005F3488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D7CDC95F20A98A6A00C017CD /* Frameworks */ = {
+		D711C5D220AC5B99005F3488 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59EDA8BF26D673EFAB4979D6 /* Pods_ARProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		128516EB4921023023D87B9A /* Pods */ = {
+		D711C5CC20AC5B99005F3488 = {
 			isa = PBXGroup;
 			children = (
-				80963ED94C05AB719E2DF3D8 /* Pods-ARProject.debug.xcconfig */,
-				827212348A59C9F36C3E1810 /* Pods-ARProject.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		65C28337ED8FDB09440F6D85 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				48D502300984E1C068CF7C59 /* Pods_ARProject.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D735685E20AA273100A4CA19 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D735685F20AA273A00A4CA19 /* Place.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D7CDC95920A98A6A00C017CD = {
-			isa = PBXGroup;
-			children = (
-				D7CDC96420A98A6A00C017CD /* ARProject */,
-				D7CDC96320A98A6A00C017CD /* Products */,
-				128516EB4921023023D87B9A /* Pods */,
-				65C28337ED8FDB09440F6D85 /* Frameworks */,
+				D711C5D720AC5B99005F3488 /* ARProject */,
+				D711C5D620AC5B99005F3488 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D7CDC96320A98A6A00C017CD /* Products */ = {
+		D711C5D620AC5B99005F3488 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7CDC96220A98A6A00C017CD /* ARProject.app */,
+				D711C5D520AC5B99005F3488 /* ARProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7CDC96420A98A6A00C017CD /* ARProject */ = {
+		D711C5D720AC5B99005F3488 /* ARProject */ = {
 			isa = PBXGroup;
 			children = (
-				D7CDC96520A98A6A00C017CD /* AppDelegate.swift */,
-				D7CDC97520A98A6B00C017CD /* Info.plist */,
-				D735685E20AA273100A4CA19 /* Models */,
-				D7CDC98120A999AD00C017CD /* Views */,
-				D7CDC98020A999A200C017CD /* Controllers */,
-				D7CDC97F20A9999900C017CD /* Supporting files */,
-				D7CDC98220A999BC00C017CD /* Helpers.swift */,
+				D711C5D820AC5B99005F3488 /* AppDelegate.swift */,
+				D711C5DA20AC5B99005F3488 /* Scene.sks */,
+				D711C5DC20AC5B99005F3488 /* Scene.swift */,
+				D711C5DE20AC5B99005F3488 /* ViewController.swift */,
+				D711C5E020AC5B99005F3488 /* Main.storyboard */,
+				D711C5E320AC5B9A005F3488 /* Assets.xcassets */,
+				D711C5E520AC5B9A005F3488 /* LaunchScreen.storyboard */,
+				D711C5E820AC5B9A005F3488 /* Info.plist */,
 			);
 			path = ARProject;
-			sourceTree = "<group>";
-		};
-		D7CDC97F20A9999900C017CD /* Supporting files */ = {
-			isa = PBXGroup;
-			children = (
-				D7CDC97020A98A6A00C017CD /* Assets.xcassets */,
-				D7CDC97220A98A6A00C017CD /* LaunchScreen.storyboard */,
-			);
-			path = "Supporting files";
-			sourceTree = "<group>";
-		};
-		D7CDC98020A999A200C017CD /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D7CDC96B20A98A6A00C017CD /* ViewController.swift */,
-				D7CDC97B20A9992600C017CD /* ViewController+Delegates.swift */,
-				D7CDC98620AA10AE00C017CD /* UI */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		D7CDC98120A999AD00C017CD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D7CDC96720A98A6A00C017CD /* Scene.sks */,
-				D7CDC96920A98A6A00C017CD /* Scene.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D7CDC98620AA10AE00C017CD /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D7CDC98720AA10BB00C017CD /* View+UI.swift */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D7CDC96120A98A6A00C017CD /* ARProject */ = {
+		D711C5D420AC5B99005F3488 /* ARProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7CDC97820A98A6B00C017CD /* Build configuration list for PBXNativeTarget "ARProject" */;
+			buildConfigurationList = D711C5EB20AC5B9A005F3488 /* Build configuration list for PBXNativeTarget "ARProject" */;
 			buildPhases = (
-				811372BC2B7DC8E9D26F0427 /* [CP] Check Pods Manifest.lock */,
-				D7CDC95E20A98A6A00C017CD /* Sources */,
-				D7CDC95F20A98A6A00C017CD /* Frameworks */,
-				D7CDC96020A98A6A00C017CD /* Resources */,
-				6054031BE095476ABB32A9DC /* [CP] Embed Pods Frameworks */,
+				D711C5D120AC5B99005F3488 /* Sources */,
+				D711C5D220AC5B99005F3488 /* Frameworks */,
+				D711C5D320AC5B99005F3488 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -162,25 +87,25 @@
 			);
 			name = ARProject;
 			productName = ARProject;
-			productReference = D7CDC96220A98A6A00C017CD /* ARProject.app */;
+			productReference = D711C5D520AC5B99005F3488 /* ARProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D7CDC95A20A98A6A00C017CD /* Project object */ = {
+		D711C5CD20AC5B99005F3488 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Jason Pierna";
 				TargetAttributes = {
-					D7CDC96120A98A6A00C017CD = {
+					D711C5D420AC5B99005F3488 = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
 			};
-			buildConfigurationList = D7CDC95D20A98A6A00C017CD /* Build configuration list for PBXProject "ARProject" */;
+			buildConfigurationList = D711C5D020AC5B99005F3488 /* Build configuration list for PBXProject "ARProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,90 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = D7CDC95920A98A6A00C017CD;
-			productRefGroup = D7CDC96320A98A6A00C017CD /* Products */;
+			mainGroup = D711C5CC20AC5B99005F3488;
+			productRefGroup = D711C5D620AC5B99005F3488 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7CDC96120A98A6A00C017CD /* ARProject */,
+				D711C5D420AC5B99005F3488 /* ARProject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D7CDC96020A98A6A00C017CD /* Resources */ = {
+		D711C5D320AC5B99005F3488 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7CDC96820A98A6A00C017CD /* Scene.sks in Resources */,
-				D7CDC97420A98A6A00C017CD /* LaunchScreen.storyboard in Resources */,
-				D7CDC97120A98A6A00C017CD /* Assets.xcassets in Resources */,
+				D711C5DB20AC5B99005F3488 /* Scene.sks in Resources */,
+				D711C5E720AC5B9A005F3488 /* LaunchScreen.storyboard in Resources */,
+				D711C5E420AC5B9A005F3488 /* Assets.xcassets in Resources */,
+				D711C5E220AC5B99005F3488 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		6054031BE095476ABB32A9DC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ARProject/Pods-ARProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARProject/Pods-ARProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		811372BC2B7DC8E9D26F0427 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ARProject-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		D7CDC95E20A98A6A00C017CD /* Sources */ = {
+		D711C5D120AC5B99005F3488 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7CDC98820AA10BB00C017CD /* View+UI.swift in Sources */,
-				D7CDC96C20A98A6A00C017CD /* ViewController.swift in Sources */,
-				D7CDC98320A999BC00C017CD /* Helpers.swift in Sources */,
-				D7CDC97C20A9992600C017CD /* ViewController+Delegates.swift in Sources */,
-				D7CDC96A20A98A6A00C017CD /* Scene.swift in Sources */,
-				D735686020AA273A00A4CA19 /* Place.swift in Sources */,
-				D7CDC96620A98A6A00C017CD /* AppDelegate.swift in Sources */,
+				D711C5DF20AC5B99005F3488 /* ViewController.swift in Sources */,
+				D711C5DD20AC5B99005F3488 /* Scene.swift in Sources */,
+				D711C5D920AC5B99005F3488 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D7CDC97220A98A6A00C017CD /* LaunchScreen.storyboard */ = {
+		D711C5E020AC5B99005F3488 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D7CDC97320A98A6A00C017CD /* Base */,
+				D711C5E120AC5B99005F3488 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D711C5E520AC5B9A005F3488 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D711C5E620AC5B9A005F3488 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -279,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D7CDC97620A98A6B00C017CD /* Debug */ = {
+		D711C5E920AC5B9A005F3488 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		D7CDC97720A98A6B00C017CD /* Release */ = {
+		D711C5EA20AC5B9A005F3488 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -393,40 +284,36 @@
 			};
 			name = Release;
 		};
-		D7CDC97920A98A6B00C017CD /* Debug */ = {
+		D711C5EC20AC5B9A005F3488 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80963ED94C05AB719E2DF3D8 /* Pods-ARProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5RUJTG3BGA;
+				DEVELOPMENT_TEAM = X9B3DSVW95;
 				INFOPLIST_FILE = ARProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpierna.ARProject.ARProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpierna.ARProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D7CDC97A20A98A6B00C017CD /* Release */ = {
+		D711C5ED20AC5B9A005F3488 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 827212348A59C9F36C3E1810 /* Pods-ARProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5RUJTG3BGA;
+				DEVELOPMENT_TEAM = X9B3DSVW95;
 				INFOPLIST_FILE = ARProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpierna.ARProject.ARProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpierna.ARProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7CDC95D20A98A6A00C017CD /* Build configuration list for PBXProject "ARProject" */ = {
+		D711C5D020AC5B99005F3488 /* Build configuration list for PBXProject "ARProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7CDC97620A98A6B00C017CD /* Debug */,
-				D7CDC97720A98A6B00C017CD /* Release */,
+				D711C5E920AC5B9A005F3488 /* Debug */,
+				D711C5EA20AC5B9A005F3488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7CDC97820A98A6B00C017CD /* Build configuration list for PBXNativeTarget "ARProject" */ = {
+		D711C5EB20AC5B9A005F3488 /* Build configuration list for PBXNativeTarget "ARProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7CDC97920A98A6B00C017CD /* Debug */,
-				D7CDC97A20A98A6B00C017CD /* Release */,
+				D711C5EC20AC5B9A005F3488 /* Debug */,
+				D711C5ED20AC5B9A005F3488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D7CDC95A20A98A6A00C017CD /* Project object */;
+	rootObject = D711C5CD20AC5B99005F3488 /* Project object */;
 }
