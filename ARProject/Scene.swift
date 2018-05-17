@@ -25,6 +25,8 @@ class Scene: SKScene {
         guard let sceneView = self.view as? ARSKView else {
             return
         }
+		
+		
 				
 		// Create anchor using the camera's current position
 		if viewController?.posterPosition != nil, let currentFrame = sceneView.session.currentFrame {
@@ -33,11 +35,31 @@ class Scene: SKScene {
             translation.columns.3.z = -0.1
             let transform = simd_mul(currentFrame.camera.transform, translation)
 
-            // Add a new anchor to the session
-            let anchor = ARAnchor(transform: transform)
-            sceneView.session.add(anchor: anchor)
+			let alert = UIAlertController(title: "Nouvel objet", message: nil, preferredStyle: .alert)
+			alert.addTextField { textField in
+				textField.placeholder = "Nom"
+			}
 			
-			viewController?.anchors.append(anchor)
+			alert.addTextField { textField in
+				textField.placeholder = "Emoji"
+			}
+			
+			alert.addAction(UIAlertAction(title: "Annuler", style: .cancel))
+			
+			alert.addAction(UIAlertAction(title: "Ajouter", style: .default, handler: { action in
+				guard let nameTextField = alert.textFields?[0] else { return }
+				guard let emojiTextField = alert.textFields?[1] else { return }
+				
+				guard let name = nameTextField.text, let emoji = emojiTextField.text else { return }
+				
+				let anchor = ARAnchor(transform: transform)
+				let item = ARItem(anchor: anchor, name: name, emoji: emoji)
+				
+				self.viewController?.items[anchor.identifier] = item
+				self.viewController?.sceneView.session.add(anchor: anchor)
+			}))
+			
+			viewController?.present(alert, animated: true)
 		}
     }
 }

@@ -10,12 +10,18 @@ import UIKit
 import SpriteKit
 import ARKit
 
+struct ARItem {
+	var anchor: ARAnchor
+	var name: String
+	var emoji: String
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet var sceneView: ARSKView!
 	var scene: Scene?
 	var posterPosition: matrix_float4x4?
-	var anchors = [ARAnchor]()
+	var items = [UUID: ARItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,15 +64,15 @@ class ViewController: UIViewController {
     }
 	
 	@IBAction func reset() {
-		for anchor in anchors {
-			sceneView.session.remove(anchor: anchor)
-			print("Removed:", anchor)
+		for item in items.values {
+			sceneView.session.remove(anchor: item.anchor)
+			print("Removed:", item.name, item.emoji)
 		}
 		
 		Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { timer in
-			for anchor in self.anchors {
-				self.sceneView.session.add(anchor: anchor)
-				print("Re-added:", anchor)
+			for item in self.items.values {
+				self.sceneView.session.add(anchor: item.anchor)
+				print("Re-added:", item.name, item.emoji)
 			}
 			timer.invalidate()
 		}
@@ -90,13 +96,15 @@ extension ViewController: ARSKViewDelegate {
 			}
 			
 			return nil
+		} else if let item = items[anchor.identifier] {
+			// Create and configure a node for the anchor added to the view's session.
+			let labelNode = SKLabelNode(text: item.emoji)
+			labelNode.horizontalAlignmentMode = .center
+			labelNode.verticalAlignmentMode = .center
+			return labelNode
 		}
 		
-        // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode
+		return nil		
     }
 	
 	func view(_ view: ARSKView, didRemove node: SKNode, for anchor: ARAnchor) {
