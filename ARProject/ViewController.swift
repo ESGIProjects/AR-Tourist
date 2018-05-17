@@ -63,13 +63,13 @@ class ViewController: UIViewController {
         sceneView.session.pause()
     }
 	
-	@IBAction func reset() {
+	func reset() {
 		for item in items.values {
 			sceneView.session.remove(anchor: item.anchor)
 			print("Removed:", item.name, item.emoji)
 		}
 		
-		Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { timer in
+		Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { timer in
 			for item in self.items.values {
 				self.sceneView.session.add(anchor: item.anchor)
 				print("Re-added:", item.name, item.emoji)
@@ -89,8 +89,9 @@ extension ViewController: ARSKViewDelegate {
 			
 			posterPosition = imageAnchor.transform
 			sceneView.session.setWorldOrigin(relativeTransform: imageAnchor.transform)
+			reset()
 			
-			Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { timer in
+			Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { timer in
 				self.sceneView.session.remove(anchor: anchor)
 				timer.invalidate()
 			}
