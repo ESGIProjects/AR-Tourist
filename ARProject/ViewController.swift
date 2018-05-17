@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         if let scene = SKScene(fileNamed: "Scene") as? Scene {
             sceneView.presentScene(scene)
 			self.scene = scene
+			self.scene?.viewController = self
         }
     }
     
@@ -57,19 +58,18 @@ class ViewController: UIViewController {
     }
 	
 	@IBAction func reset() {
-		
 		for anchor in anchors {
 			sceneView.session.remove(anchor: anchor)
+			print("Removed:", anchor)
 		}
 		
-		Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { timer in
+		Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { timer in
 			for anchor in self.anchors {
 				self.sceneView.session.add(anchor: anchor)
+				print("Re-added:", anchor)
 			}
 			timer.invalidate()
 		}
-		
-		anchors.removeAll()
 	}
 }
 
@@ -78,9 +78,17 @@ extension ViewController: ARSKViewDelegate {
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
 		print(#function)
 		
-		if anchor is ARImageAnchor {
-			posterPosition = anchor.transform
-			sceneView.session.setWorldOrigin(relativeTransform: anchor.transform)
+		if let imageAnchor = anchor as? ARImageAnchor {
+			print("referenceImage name", imageAnchor.referenceImage.name ?? "Nope")
+			
+			posterPosition = imageAnchor.transform
+			sceneView.session.setWorldOrigin(relativeTransform: imageAnchor.transform)
+			
+			Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { timer in
+				self.sceneView.session.remove(anchor: anchor)
+				timer.invalidate()
+			}
+			
 			return nil
 		}
 		
@@ -91,13 +99,7 @@ extension ViewController: ARSKViewDelegate {
         return labelNode
     }
 	
-	func view(_ view: ARSKView, didAdd node: SKNode, for anchor: ARAnchor) {
-		guard let imageAnchor = anchor as? ARImageAnchor else { return }
-		print("referenceImage name", imageAnchor.referenceImage.name ?? "Nope")
-		
-		Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { timer in
-			self.sceneView.session.remove(anchor: anchor)
-			timer.invalidate()
-		}
+	func view(_ view: ARSKView, didRemove node: SKNode, for anchor: ARAnchor) {
+		print(#function)
 	}
 }
